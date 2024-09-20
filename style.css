@@ -1,0 +1,897 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+/* Aplicar fuente globalmente */
+* {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #dde1e9;
+}
+
+.misDatos {
+    padding: 30px;
+    background-color: #13043d;
+    text-align: center;
+}
+
+.misDatos .info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.misDatos .foto-perfil {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.misDatos .dato {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #ffffff; /* Cambia el color del texto a blanco */
+}
+
+
+.contenedor-header {
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #1f283e;
+    background-color: rgba(0,0,0,.7);
+    z-index: 99;
+    padding: 0 20px;
+}
+
+/* Estilos del encabezado */
+.contenedor-header header {
+    max-width: 1100px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+/* Estilos de los enlaces del menú */
+.contenedor-header header nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+/* Estilos de los enlaces del menú en hover */
+.contenedor-header header nav a:hover {
+    color: #ff1133;
+}
+
+/* Estilos de los iconos de redes sociales */
+.contenedor-header header .redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 5px 8px;
+}
+
+/* Estilos de los iconos de redes sociales en hover */
+.contenedor-header header .redes a:hover {
+    color: #ff1133;
+}
+
+/* Icono del menú responsive */
+.nav-responsive {
+    display: none;
+    font-size: 25px;
+}
+
+/* Sección de inicio */
+.inicio {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 1, 3, 0.5), rgba(0,0,0,.7)), url(img/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    position: relative;
+}
+
+.txtRojo {
+    color: red; /* Cambia el color a rojo */
+}
+
+
+/* Contenido de la sección de inicio */
+.inicio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Información de la sección de inicio */
+.inicio .info {
+    width: fit-content;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Título de la sección de inicio */
+.inicio .info h2 {
+    font-size: 4rem;
+    letter-spacing: 3px;
+}
+
+/* Párrafos de la sección de inicio */
+.inicio .info p {
+    margin: 20px;
+    color: #797e8e;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+/* Botón de la sección de inicio */
+.inicio .info .btn-mas {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #ff1133;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ff1133;
+    margin-top: 50px;
+    text-decoration: none;
+}
+
+/* Opciones de la sección de inicio */
+.inicio .opciones {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Opciones individuales */
+.inicio .opciones .opcion {
+    border-top: 2px solid #797e8e;
+    padding: 7px;
+    color: #797e8e;
+    margin: 0 20px;
+}
+
+
+/* Contenedor principal de la sección */
+.nosotros {
+    max-width: 1100px;
+    margin: auto;
+    height: 100vh;
+    background-color: #dde1e9;
+    padding: 100px 20px;
+}
+
+/* Fila dentro de la sección */
+.nosotros .fila {
+    display: flex;
+    align-items: center;
+}
+
+/* Columnas dentro de una fila */
+.nosotros .fila .col {
+    width: 50%;
+}
+
+/* Imágenes dentro de columnas */
+.nosotros .fila .col img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* Contenedor de título dentro de una columna */
+.nosotros .fila .col .contenedor-titulo {
+    display: flex;
+    align-items: center;
+}
+
+/* Número dentro del contenedor de título */
+.nosotros .fila .col .contenedor-titulo .numero {
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+
+/* Información dentro del contenedor de título */
+.nosotros .fila .col .contenedor-titulo .info {
+    margin-left: 30px;
+}
+
+/* Frase dentro de la información del contenedor de título */
+.nosotros .fila .col .contenedor-titulo .info .frase {
+    color: #ff1133;
+}
+
+/* Títulos h2 dentro de la información del contenedor de título */
+.nosotros .fila .col .contenedor-titulo .info h2 {
+    font-size: 3rem;
+}
+
+/* Párrafos dentro de una columna */
+.nosotros .fila .col p {
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+
+/* Párrafos especiales dentro de una columna */
+.nosotros .fila .col .p-especial {
+    font-weight: bold;
+}
+
+/* Línea horizontal dentro de la sección */
+.nosotros hr {
+    margin-bottom: 30px;
+}
+
+/* Fila dentro de la sección de nosotros con opciones */
+.nosotros .fila-nosotros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Frase dentro de la fila de nosotros */
+.nosotros .fila-nosotros .frase {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Títulos h2 dentro de la fila de nosotros */
+.nosotros .fila-nosotros h2 {
+    font-size: 2.5rem;
+}
+
+.nosotros .fila-nosotros button {
+    background-color: #ff1133;
+    border: none;
+    color: #fff;
+    padding: 15px 35px;
+    font-size: 14px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.servicios {
+    color: #fff;
+    position: relative;
+}
+
+.servicios .contenido-seccion {
+    background: linear-gradient(rgba(0, 14, 41, 0.6), rgba(0, 7, 78, 0.7)), url(img/fondo-servicios.jpg);
+    background-size: cover;
+    background-position: center center;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Fila dentro del contenido de la sección */
+.servicios .contenido-seccion .fila {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+}
+
+/* Columnas dentro de una fila */
+.servicios .contenido-seccion .fila .col {
+    width: 50%;
+}
+
+/* Imágenes dentro de las columnas */
+.servicios .contenido-seccion .fila .col img {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+/* Contenedor de título dentro de una columna */
+.servicios .contenido-seccion .fila .col .contenedor-titulo {
+    display: flex;
+    align-items: center;
+}
+
+/* Número dentro del contenedor de título */
+.servicios .contenido-seccion .fila .col .contenedor-titulo .numero {
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+
+/* Información dentro del contenedor de título */
+.servicios .contenido-seccion .fila .col .contenedor-titulo .info {
+    margin-left: 30px;
+}
+
+/* Frase dentro de la información del contenedor de título */
+.servicios .contenido-seccion .fila .col .contenedor-titulo .info .frase {
+    color: #ff1133;
+}
+
+/* Títulos h2 dentro de la información del contenedor de título */
+.servicios .contenido-seccion .fila .col .contenedor-titulo .info h2 {
+    font-size: 3rem;
+}
+
+/* Párrafos dentro de una columna */
+.servicios .contenido-seccion .fila .col p {
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+
+/* Párrafos especiales dentro de una columna */
+.servicios .contenido-seccion .fila .col .p-especial {
+    font-weight: bold;
+}
+
+/* Información de servicios */
+.servicios .info-servicios {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Tabla dentro de la información de servicios */
+.servicios .info-servicios table {
+    text-align: center;
+    background-color: #fff;
+    color: #1f283e;
+    border-collapse: collapse;
+    position: relative;
+    bottom: 100px;
+}
+
+/* Celdas de la tabla */
+.servicios .info-servicios table td {
+    padding: 30px;
+    border: 1px solid #dde1e9;
+}
+
+/* Iconos dentro de las celdas de la tabla */
+.servicios .info-servicios table td i {
+    color: #ff1133;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Títulos h3 dentro de la información de servicios */
+.servicios .info-servicios h3 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Párrafos dentro de la información de servicios */
+.servicios .info-servicios p {
+    line-height: 30px;
+}
+
+
+/* Contenedor principal de la sección */
+.comodidades {
+    max-width: 1100px;
+    margin: auto;
+    background-color: #dde1e9;
+    padding: 100px 20px;
+}
+
+/* Fila dentro del contenedor de comodidades */
+.comodidades .fila {
+    display: flex;
+    align-items: center;
+}
+
+/* Columnas dentro de una fila */
+.comodidades .fila .col {
+    width: 50%;
+}
+
+/* Imágenes dentro de las columnas */
+.comodidades .fila .col img {
+    width: 80%;
+    display: block;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* Contenedor de título dentro de una columna */
+.comodidades .fila .col .contenedor-titulo {
+    display: flex;
+    align-items: center;
+}
+
+/* Número dentro del contenedor de título */
+.comodidades .fila .col .contenedor-titulo .numero {
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+
+/* Información dentro del contenedor de título */
+.comodidades .fila .col .contenedor-titulo .info {
+    margin-left: 30px;
+}
+
+/* Frase dentro de la información del contenedor de título */
+.comodidades .fila .col .contenedor-titulo .info .frase {
+    color: #ff1133;
+}
+
+/* Títulos h2 dentro de la información del contenedor de título */
+.comodidades .fila .col .contenedor-titulo .info h2 {
+    font-size: 3rem;
+}
+
+/* Párrafos dentro de una columna */
+.comodidades .fila .col p {
+    margin-bottom: 10px;
+    line-height: 28px;
+}
+
+/* Párrafos especiales dentro de una columna */
+.comodidades .fila .col .p-especial {
+    font-weight: bold;
+}
+
+/* Listas dentro de una columna */
+.comodidades .fila .col li {
+    margin-bottom: 20px;
+    color: #1f283e;
+}
+
+/* Span dentro de las listas */
+.comodidades .fila .col li span {
+    font-weight: bold;
+    color: #ff1133;
+}
+
+
+/* ********** */
+/* GALERIA */
+/* ********** */
+
+/* Contenedor principal de la galería */
+.galeria {
+    color: #fff;
+    background: linear-gradient(
+        rgba(0, 14, 41, 0.6), 
+        rgba(0, 7, 78, 0.7)
+    ), url(img/fondo-galeria.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+}
+
+/* Contenido de la sección dentro de la galería */
+.galeria .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Contenedor de título dentro de la galería */
+.galeria .contenedor-titulo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+/* Número dentro del contenedor de título */
+.galeria .contenedor-titulo .numero {
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+
+/* Información dentro del contenedor de título */
+.galeria .contenedor-titulo .info {
+    margin-left: 30px;
+}
+
+/* Frase dentro de la información del contenedor de título */
+.galeria .contenedor-titulo .info .frase {
+    color: #ff1133;
+}
+
+/* Títulos h2 dentro de la información del contenedor de título */
+.galeria .contenedor-titulo .info h2 {
+    font-size: 3rem;
+}
+
+/* Fila dentro de la galería */
+.galeria .fila {
+    display: flex;
+}
+
+/* Columnas dentro de la fila */
+.galeria .fila .col img {
+    width: 100%;
+    display: block;
+}
+
+
+/* *********** */
+/* ENTRENADORES */
+/* *********** */
+
+/* Contenedor principal del equipo */
+.equipo {
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 95px;
+    background-color: #dde1e9;
+}
+
+/* Contenedor de título dentro del equipo */
+.equipo .contenedor-titulo {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+/* Número dentro del contenedor de título */
+.equipo .contenedor-titulo .numero {
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+
+/* Información dentro del contenedor de título */
+.equipo .contenedor-titulo .info {
+    margin-left: 30px;
+}
+
+/* Frase dentro de la información del contenedor de título */
+.equipo .contenedor-titulo .info .frase {
+    color: #ff1133;
+}
+
+/* Títulos h2 dentro de la información del contenedor de título */
+.equipo .contenedor-titulo .info h2 {
+    font-size: 3rem;
+}
+
+/* Fila dentro del equipo */
+.equipo .fila {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Columnas dentro de la fila */
+.equipo .fila .col {
+    width: 25%;
+}
+
+/* Imágenes dentro de las columnas */
+.equipo .fila .col img {
+    max-height: 400px;
+    display: block;
+    margin: auto;
+}
+
+/* Información dentro de la fila */
+.equipo .fila .info {
+    border: 5px solid #1f283e;
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    background: linear-gradient(#ff1133, #9a0e23);
+    color: #fff;
+}
+
+/* Párrafos dentro de la información de la fila */
+.equipo .fila .info p {
+    margin: 20px 0;
+}
+
+/* Enlaces dentro de la información de la fila */
+.equipo .fila .info a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 20px;
+}
+
+
+/* *********** */
+/* CONTACTO */
+/* *********** */
+
+/* Contenedor principal del contacto */
+.contacto {
+    color: #fff;
+    background: linear-gradient(
+        rgba(0, 14, 41, 0.6),
+        rgba(0, 7, 78, 0.7)
+    ), url(img/fondo.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 20px;
+}
+
+/* Contenido de la sección dentro del contacto */
+.contacto .contenido-seccion {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Contenedor de título dentro del contacto */
+.contacto .contenedor-titulo {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: auto;
+}
+
+/* Número dentro del contenedor de título */
+.contacto .contenedor-titulo .numero {
+    color: #ff1133;
+    font-weight: bold;
+    display: block;
+    font-size: 5rem;
+}
+
+/* Información dentro del contenedor de título */
+.contacto .contenedor-titulo .info {
+    margin-left: 30px;
+}
+
+/* Frase dentro de la información del contenedor de título */
+.contacto .contenedor-titulo .info .frase {
+    color: #ff1133;
+}
+
+/* Títulos h2 dentro de la información del contenedor de título */
+.contacto .contenedor-titulo .info h2 {
+    font-size: 3rem;
+}
+
+/* Fila dentro del contacto */
+.contacto .fila {
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+}
+
+/* Columnas dentro de la fila */
+.contacto .fila .col {
+    width: 48%;
+}
+
+/* Campos de entrada dentro de la fila */
+.contacto .fila input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    outline: none;
+}
+
+/* Área de texto dentro del contacto */
+.contacto textarea {
+    display: block;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    outline: none;
+    width: 100%;
+    height: 200px;
+}
+
+/* Botón dentro del contacto */
+.contacto button {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    margin-top: 30px;
+    border: none;
+    background-color: #ff1133;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Fila de datos dentro del contacto */
+.contacto .fila-datos {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* Iconos dentro del contacto */
+.contacto i {
+    color: #ff1133;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+/* *********** */
+/* FOOTER */
+/* *********** */
+footer {
+    background-color: #151623;
+    padding: 30px 0;
+}
+
+footer .info {
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+footer .info p {
+    color: #797e8e;
+}
+
+footer .info a {
+    text-decoration: none;
+    color: #797e8e;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* *********** */
+/* RESPONSIVE */
+/* *********** */
+@media only screen and (max-width: 900px) {
+
+    header nav {
+        position: initial;
+        display: none;
+        transform: translate(0);
+    }
+
+    header .redes {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+
+    nav .responsive {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #151623;
+        z-index: 99;
+    }
+
+    nav .responsive a {
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 30px;
+    }
+
+    .inicio .opciones {
+        display: none;
+    }
+
+    .nosotros .fila {
+        display: block;
+    }
+
+    .nosotros .fila .col {
+        width: 100%;
+        margin: auto;
+    }
+
+    .nosotros .fila .col img {
+        max-width: 200px;
+        display: block;
+        margin: auto;
+    }
+
+    .servicios .contenido-seccion .fila {
+        display: block;
+    }
+
+    .servicios .contenido-seccion .fila .col {
+        width: 100%;
+    }
+
+    .comodidades .fila {
+        display: block;
+    }
+
+    .comodidades .fila .col {
+        width: 100%;
+    }
+
+    .comodidades .fila .col img {
+        max-width: 200px;
+    }
+
+    .equipo .fila {
+        display: block;
+    }
+
+    .equipo .fila .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .equipo .fila .col img {
+        max-height: 200px;
+    }
+
+    .equipo .fila .info {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .contacto .fila-datos {
+        display: block;
+    }
+
+    .contacto .fila-datos .col {
+        margin-bottom: 20px;
+    }
+
+    footer .info {
+        display: block;
+        text-align: center;
+    }
+
+    footer .info p {
+        margin-bottom: 10px;
+    }
+}
